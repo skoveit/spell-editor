@@ -11,8 +11,8 @@ A lightweight, distraction-free, keyboard-driven spell checking web text editor.
 ## Get It Running
 
 ```bash
-git clone https://github.com/skoveit/spell
-cd spell
+git clone https://github.com/skoveit/spell-editor
+cd spell-editor
 ```
 
 ### Using Docker

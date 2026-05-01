@@ -1,6 +1,8 @@
 # spell
-
 A lightweight, distraction-free, keyboard-driven spell checking web text editor.
+
+<img width="1920" height="1080" alt="demo" src="https://github.com/user-attachments/assets/02c98829-4ae4-45e1-85b8-3d64e665cf24" />
+
 
 ## Stack
 - **API:** Go

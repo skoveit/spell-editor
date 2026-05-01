@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpellCheck Editor - Premium Text Editing</title>
+    <meta name="description" content="A premium online text editor with real-time spell checking.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h1>SpellCheck Pro</h1>
+            </div>
+            <div class="header-actions">
+                <span id="status" class="status-indicator">Ready</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="editor-section">
+                <!-- Overlay approach for highlights -->
+                <div class="editor-wrapper">
+                    <div id="highlights" class="highlights"></div>
+                    <textarea id="editor" placeholder="Start typing here... Errors will be highlighted in real-time." spellcheck="false"></textarea>
+                </div>
+            </div>
+
+            <aside class="sidebar" id="sidebar">
+                <div class="sidebar-header">
+                    <h2>Spelling Suggestions</h2>
+                    <span id="error-count" class="badge">0</span>
+                </div>
+                <div id="suggestions-container" class="suggestions-container">
+                    <div class="empty-state">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 6L9 17L4 12" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p>No spelling errors found. Great job!</p>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

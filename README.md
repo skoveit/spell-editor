@@ -1,6 +1,6 @@
 # spell
 
-A lightweight, real-time spell checking web based text editor.
+A lightweight, distraction-free, keyboard-driven spell checking web text editor.
 
 ## Stack
 - **API:** Go
@@ -45,6 +45,8 @@ Then head to `http://localhost:8080`.
 **Custom tokenizer:** Explicitly breaks down camelCase expressions and splits around hyphens and underscores before checking. This extracts true English words and preserves the original character offsets so highlights stay accurate.
 
 **No frameworks:** No React, no Gin, no Echo. Go's standard library handles the HTTP layer cleanly. A single `fetch()` call is all the frontend needs.
+
+**Keyboard-driven UI:** It's fully keyboard navigable: `Tab` to jump between errors, and `QWERASDF` to instantly apply them.
 
 ## What I Cut
 
